@@ -1,5 +1,9 @@
+<script>
+  import { fade } from "svelte/transition";
+</script>
+
 <main>
-  <h1>Hello World!</h1>
+  <h1 transition:fade>Hello World!</h1>
   <p>
     Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
     how to build Svelte apps.
