@@ -1,26 +1,21 @@
 {
-  "name": "svelte-app",
+  "name": "sveltekit-netlify-template",
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public --no-clear"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^24.1.0",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-terser": "^0.4.4",
-    "rollup": "^3.15.0",
-    "rollup-plugin-css-only": "^4.3.0",
-    "rollup-plugin-livereload": "^2.0.5",
-    "rollup-plugin-serve": "^1.1.1",
-    "rollup-plugin-svelte": "^7.2.0",
-    "svelte": "^3.55.0",
-    "tinro": "^0.6.12"
-  },
-  "dependencies": {
-    "sirv-cli": "^2.0.0"
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.70.1",
+    "@sveltejs/vite-plugin-svelte": "^7.2.0",
+    "svelte": "^5.56.8",
+    "vite": "^8.1.5"
   }
 }
