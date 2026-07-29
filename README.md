@@ -1,11 +1,25 @@
-# Setup
+# SvelteKit Netlify Template
 
-Clone and run npm install in the project's root directory.
+A minimal SvelteKit starter for static Netlify deployments.
 
-# Running in Development
+## Requirements
 
-Use `npm run dev` and navigate to `localhost:8080` to see the project. You can modify the port inside of `rollup.config.js` in the project's root directory.
+- Node `20.19.0` or newer
 
-# Deploying
+## Development
 
-Connect this project to Netlify and then all you have to do is push to the main branch and wait a moment to see the new version live.
+1. Install dependencies with `npm install`
+2. Start the dev server with `npm run dev`
+3. Open the local URL printed by Vite, usually `http://localhost:5173`
+
+## Build
+
+- Run `npm run build`
+- Static output is generated in `build/`
+
+## Netlify
+
+This template uses SvelteKit with `@sveltejs/adapter-static`.
+
+- Build command: `npm run build`
+- Publish directory: `build`
